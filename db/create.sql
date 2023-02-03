@@ -27,6 +27,9 @@ CREATE TABLE products_bundle (
 -- want different data? check: https://www.mockaroo.com/910b6c20
 --
 
+/*landen*/
+
+
 insert into products (name, description, code, price) values ('Nederland', 'Van de prachtige molens tot het bruisende Amsterdam, kom de goudse kaas leren kennen en bekijk de havens van Rotterdam. Ga langs de Frieze boeren en eet wat Limburgse Vlaai, en voor je bij schiphol weer opstapt, haal een joint.', '816905633-0', 990);
 
 insert into products (name, description, code, price) values ('Zweden', 'het land van Ikea, Pewdipie en Minecraft', '077030122-3', 674);
@@ -73,6 +76,7 @@ insert into products (name, description, code, price) values ('Congo', 'oorlog',
 insert into products (name, description, code, price) values ('Madagaskar', 'pinguins', '492662523-7', 0);
 
 
+/* landen bundle */
 insert into products_bundle (name, description, code, price) values ('Europa bundle', 'goeie', '492662523-7', 0);
 
 insert into products_bundle (name, description, code, price) values ('Amerika bundle', 'trump', '492662523-7', 0);
