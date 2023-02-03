@@ -33,13 +33,55 @@ insert into products (name, description, code, price) values ('Zweden', 'het lan
 
 insert into products (name, description, code, price) values ('Duitsland', 'Bratwurst und Angela Merkel', '445924201-X', 4030);
 
-insert into products (name, description, code, price) values ('Vernigde Arabische Emiraten', 'Alladin', '686928463-6', 814.70);
+insert into products (name, description, code, price) values ('Marokko', 'Alladin', '686928463-6', 814.70);
 
-insert into products (name, description, code, price) values ('Irak', 'Alladin', '686928463-6', 0);
+insert into products (name, description, code, price) values ('Iran', 'Alladin', '686928463-6', 0);
 
 insert into products (name, description, code, price) values ('Turkije', 'Alladin', '686928463-6', 0);
 
 insert into products (name, description, code, price) values ('Canada', 'Stroop en blad en Eland', '492662523-7', 631.30);
 
 insert into products (name, description, code, price) values ('Verenigde Staten', 'Stroop en blad en Eland', '492662523-7', 0);
+
+insert into products (name, description, code, price) values ('Mexico', 'Tacos', '492662523-7', 0);
+
+insert into products (name, description, code, price) values ('Brazilië', 'Rio', '492662523-7', 0);
+
+insert into products (name, description, code, price) values ('Argentinië', 'licht blauw ofz', '492662523-7', 0);
+
+insert into products (name, description, code, price) values ('China', 'Winnie de poe', '492662523-7', 0);
+
+insert into products (name, description, code, price) values ('Rusland', 'Putin', '492662523-7', 0);
+
+insert into products (name, description, code, price) values ('Noord-Korea', 'Kim jong-un', '492662523-7', 0);
+
+insert into products (name, description, code, price) values ('Australië', 'kangaroo', '492662523-7', 0);
+
+insert into products (name, description, code, price) values ('Nieuw-Zeeland', 'Kiwi', '492662523-7', 0);
+
+insert into products (name, description, code, price) values ('Papoea-Nieuw-Guinea', 'Hoofdstad: Port Moresby
+Oppervlakte: 462.840 km²
+Inwonersaantal: 9,949 miljoen (2021) Wereldbank
+Valuta: Papoea-Nieuw-Guinese kina
+Werelddeel: Oceanië
+Officiële talen: Tok Pisin, Engels, Hiri Motu, Papua New Guinean ', '492662523-7', 0);
+
+insert into products (name, description, code, price) values ('Ghana', 'chocolade', '492662523-7', 0);
+
+insert into products (name, description, code, price) values ('Congo', 'oorlog', '492662523-7', 0);
+
+insert into products (name, description, code, price) values ('Madagaskar', 'pinguins', '492662523-7', 0);
+
+
+insert into products_bundle (name, description, code, price) values ('Europa bundle', 'goeie', '492662523-7', 0);
+
+insert into products_bundle (name, description, code, price) values ('Amerika bundle', 'trump', '492662523-7', 0);
+
+insert into products_bundle (name, description, code, price) values ('Afrika bundle', 'goeie', '492662523-7', 0);
+
+insert into products_bundle (name, description, code, price) values ('Arabië bundle', 'goeie', '492662523-7', 0);
+
+insert into products_bundle (name, description, code, price) values ('Azië bundle', 'goeie', '492662523-7', 0);
+
+insert into products_bundle (name, description, code, price) values ('Wereldmacht bundle', 'Putin Trump Kim winnie de poe', '492662523-7', 0);
 
