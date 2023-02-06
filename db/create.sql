@@ -10,6 +10,15 @@ CREATE TABLE products (
   price NUMERIC(10, 2)
 );
 
+CREATE TABLE productInfo (
+   id INTEGER PRIMARY KEY AUTOINCREMENT,
+  products_id INTEGER
+  oppervlakte TEXT,
+  inwoners TEXT,
+  Continent TEXT,
+  products_id INTEGER
+);
+
 CREATE TABLE products_bundle (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
   code VARCHAR(15),
@@ -17,6 +26,21 @@ CREATE TABLE products_bundle (
   description TEXT,
   price NUMERIC(10, 2)
 );
+
+CREATE TABLE author (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  name VARCHAR(255),
+);
+
+CREATE TABLE productReview (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  products_id INTEGER,
+  review_id INTEGER,
+  review TEXT,
+  grade NUMERIC(10, 2)
+);
+
+
 
 --
 -- populate with data
@@ -30,9 +54,15 @@ CREATE TABLE products_bundle (
 /*landen*/
 
 
-insert into products (name, description, code, price) values ('Nederland', 'Van de prachtige molens tot het bruisende Amsterdam, kom de goudse kaas leren kennen en bekijk de havens van Rotterdam. Ga langs de Frieze boeren en eet wat Limburgse Vlaai, en voor je bij schiphol weer opstapt, haal een joint.', '816905633-0', 990);
+insert into products (name, description, code, price) values ('Nederland', 
+'41.850 km²
+17,53 miljoen inwoners
+Europa', '816905633-0', 990);
 
-insert into products (name, description, code, price) values ('Zweden', 'het land van Ikea, Pewdipie en Minecraft', '077030122-3', 674);
+insert into products (name, description, code, price) values ('Zweden',
+'10.42 miljoen inwoners
+447,425 km²
+Europa', '077030122-3', 674);
 
 insert into products (name, description, code, price) values ('Duitsland', 'Bratwurst und Angela Merkel', '445924201-X', 4030);
 
@@ -63,11 +93,9 @@ insert into products (name, description, code, price) values ('Australië', 'kan
 insert into products (name, description, code, price) values ('Nieuw-Zeeland', 'Kiwi', '492662523-7', 0);
 
 insert into products (name, description, code, price) values ('Papoea-Nieuw-Guinea', 'Hoofdstad: Port Moresby
-Oppervlakte: 462.840 km²
-Inwonersaantal: 9,949 miljoen (2021) Wereldbank
-Valuta: Papoea-Nieuw-Guinese kina
-Werelddeel: Oceanië
-Officiële talen: Tok Pisin, Engels, Hiri Motu, Papua New Guinean ', '492662523-7', 0);
+462.840 km²
+9,949 miljoen inwoners
+Oceanië', '492662523-7', 0);
 
 insert into products (name, description, code, price) values ('Ghana', 'chocolade', '492662523-7', 0);
 
@@ -89,3 +117,9 @@ insert into products_bundle (name, description, code, price) values ('Azië bund
 
 insert into products_bundle (name, description, code, price) values ('Wereldmacht bundle', 'Putin Trump Kim winnie de poe', '492662523-7', 0);
 
+/* review */
+insert into productReview (products_id, name, review, grade) values (1 'Matthijs', 'veel fietspad', 8);
+
+insert into productReview (products_id, name, review, grade) values (1 'Maaike', 'regen :(', 3);
+
+insert into productReview (products_id, name, review, grade) values (1 'Matthijs', '', 10);
