@@ -6,7 +6,6 @@ CREATE TABLE products (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
   code VARCHAR(15),
   name VARCHAR(255),
-  description TEXT,
   price NUMERIC(10, 2)
 );
 
@@ -15,7 +14,7 @@ CREATE TABLE productInfo (
   products_id INTEGER
   oppervlakte TEXT,
   inwoners TEXT,
-  Continent TEXT,
+  continent TEXT,
   products_id INTEGER
 );
 
@@ -23,7 +22,6 @@ CREATE TABLE products_bundle (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
   code VARCHAR(15),
   name VARCHAR(255),
-  description TEXT,
   price NUMERIC(10, 2)
 );
 
@@ -54,55 +52,86 @@ CREATE TABLE productReview (
 /*landen*/
 
 
-insert into products (name, description, code, price) values ('Nederland', 
-'41.850 km²
-17,53 miljoen inwoners
-Europa', '816905633-0', 990);
+insert into products (name, description, code, price) values ('Nederland', '816905633-0', 990);
 
-insert into products (name, description, code, price) values ('Zweden',
-'10.42 miljoen inwoners
-447,425 km²
-Europa', '077030122-3', 674);
+insert into products (name, description, code, price) values ('Zweden', '077030122-3', 674);
 
-insert into products (name, description, code, price) values ('Duitsland', 'Bratwurst und Angela Merkel', '445924201-X', 4030);
+insert into products (name, description, code, price) values ('Duitsland', '445924201-X', 4030);
 
-insert into products (name, description, code, price) values ('Marokko', 'Alladin', '686928463-6', 814.70);
+insert into products (name, description, code, price) values ('Marokko', '686928463-6', 814.70);
 
-insert into products (name, description, code, price) values ('Iran', 'Alladin', '686928463-6', 0);
+insert into products (name, description, code, price) values ('Iran', '686928463-6', 0);
 
-insert into products (name, description, code, price) values ('Turkije', 'Alladin', '686928463-6', 0);
+insert into products (name, description, code, price) values ('Turkije', '686928463-6', 0);
 
-insert into products (name, description, code, price) values ('Canada', 'Stroop en blad en Eland', '492662523-7', 631.30);
+insert into products (name, description, code, price) values ('Canada', '492662523-7', 631.30);
 
-insert into products (name, description, code, price) values ('Verenigde Staten', 'Stroop en blad en Eland', '492662523-7', 0);
+insert into products (name, description, code, price) values ('Verenigde Staten', '492662523-7', 0);
 
-insert into products (name, description, code, price) values ('Mexico', 'Tacos', '492662523-7', 0);
+insert into products (name, description, code, price) values ('Mexico', '492662523-7', 0);
 
-insert into products (name, description, code, price) values ('Brazilië', 'Rio', '492662523-7', 0);
+insert into products (name, description, code, price) values ('Brazilië', '492662523-7', 0);
 
-insert into products (name, description, code, price) values ('Argentinië', 'licht blauw ofz', '492662523-7', 0);
+insert into products (name, description, code, price) values ('Argentinië', '492662523-7', 0);
 
-insert into products (name, description, code, price) values ('China', 'Winnie de poe', '492662523-7', 0);
+insert into products (name, description, code, price) values ('China', '492662523-7', 0);
 
-insert into products (name, description, code, price) values ('Rusland', 'Putin', '492662523-7', 0);
+insert into products (name, description, code, price) values ('Rusland', '492662523-7', 0);
 
-insert into products (name, description, code, price) values ('Noord-Korea', 'Kim jong-un', '492662523-7', 0);
+insert into products (name, description, code, price) values ('Noord-Korea', '492662523-7', 0);
 
-insert into products (name, description, code, price) values ('Australië', 'kangaroo', '492662523-7', 0);
+insert into products (name, description, code, price) values ('Australië', '492662523-7', 0);
 
-insert into products (name, description, code, price) values ('Nieuw-Zeeland', 'Kiwi', '492662523-7', 0);
+insert into products (name, description, code, price) values ('Nieuw-Zeeland', '492662523-7', 0);
 
-insert into products (name, description, code, price) values ('Papoea-Nieuw-Guinea', 'Hoofdstad: Port Moresby
-462.840 km²
-9,949 miljoen inwoners
-Oceanië', '492662523-7', 0);
+insert into products (name, description, code, price) values ('Papoea-Nieuw-Guinea', '492662523-7', 0);
 
-insert into products (name, description, code, price) values ('Ghana', 'chocolade', '492662523-7', 0);
+insert into products (name, description, code, price) values ('Ghana', '492662523-7', 0);
 
-insert into products (name, description, code, price) values ('Congo', 'oorlog', '492662523-7', 0);
+insert into products (name, description, code, price) values ('Congo', '492662523-7', 0);
 
-insert into products (name, description, code, price) values ('Madagaskar', 'pinguins', '492662523-7', 0);
+insert into products (name, description, code, price) values ('Madagaskar', '492662523-7', 0);
 
+/* Info */
+insert into productInfo (products.id, oppervlakte, inwoners, continent) values ('1', '41.850 km²', '17,53 miljoen inwoners', 'Europa');
+
+insert into productInfo (products.id, oppervlakte, inwoners, continent) values ('2', '10.42 miljoen inwoners', '447,425 km²', 'Europa');
+
+insert into productInfo (products.id, oppervlakte, inwoners, continent) values ('3', '357.588 km²', '83,2 miljoen inwoners', 'Europa');
+
+insert into productInfo (products.id, oppervlakte, inwoners, continent) values ('4', '446.550 km²', '37,08 miljoen inwoners', 'Afrika');
+
+insert into productInfo (products.id, oppervlakte, inwoners, continent) values ('5', '1.648.000 km²', '87,92 miljoen inwoners', 'Midden-Oosten');
+
+insert into productInfo (products.id, oppervlakte, inwoners, continent) values ('6', '783.562 km²', '84,78 miljoen inwoners', 'Midden-Oosten');
+
+insert into productInfo (products.id, oppervlakte, inwoners, continent) values ('7', '9.985.000 km²', '38,25 miljoen inwoners', 'Noord-Amerika');
+
+insert into productInfo (products.id, oppervlakte, inwoners, continent) values ('8', '9.834.000 km²', '331,9 miljoen inwoners', 'Noord-Amerika');
+
+insert into productInfo (products.id, oppervlakte, inwoners, continent) values ('9', '1.964.375 km²', '126,7 miljoen inwoners', 'Noord-Amerika');
+
+insert into productInfo (products.id, oppervlakte, inwoners, continent) values ('10', '8.516.000 km²', '214,3 miljoen inwoners', 'Zuid-Amerika');
+
+insert into productInfo (products.id, oppervlakte, inwoners, continent) values ('11', '2.780.000 km²', '45,81 miljoen inwoners', 'Zuid-Amerika');
+
+insert into productInfo (products.id, oppervlakte, inwoners, continent) values ('12', '41.850 km²', '17,53 miljoen inwoners', 'Azië');
+
+insert into productInfo (products.id, oppervlakte, inwoners, continent) values ('13', '41.850 km²', '17,53 miljoen inwoners', 'Azië');
+
+insert into productInfo (products.id, oppervlakte, inwoners, continent) values ('14', '41.850 km²', '17,53 miljoen inwoners', 'Azië');
+
+insert into productInfo (products.id, oppervlakte, inwoners, continent) values ('15', '41.850 km²', '17,53 miljoen inwoners', 'Europa');
+
+insert into productInfo (products.id, oppervlakte, inwoners, continent) values ('16', '41.850 km²', '17,53 miljoen inwoners', 'Europa');
+
+insert into productInfo (products.id, oppervlakte, inwoners, continent) values ('17', '462.840 km²', '9,949 miljoen inwoners', 'Oceanië');
+
+insert into productInfo (products.id, oppervlakte, inwoners, continent) values ('18', '41.850 km²', '17,53 miljoen inwoners', 'Europa');
+
+insert into productInfo (products.id, oppervlakte, inwoners, continent) values ('19', '41.850 km²', '17,53 miljoen inwoners', 'Europa');
+
+insert into productInfo (products.id, oppervlakte, inwoners, continent) values ('20', '41.850 km²', '17,53 miljoen inwoners', 'Europa');
 
 /* landen bundle */
 insert into products_bundle (name, description, code, price) values ('Europa bundle', 'goeie', '492662523-7', 0);
@@ -118,8 +147,3 @@ insert into products_bundle (name, description, code, price) values ('Azië bund
 insert into products_bundle (name, description, code, price) values ('Wereldmacht bundle', 'Putin Trump Kim winnie de poe', '492662523-7', 0);
 
 /* review */
-insert into productReview (products_id, name, review, grade) values (1 'Matthijs', 'veel fietspad', 8);
-
-insert into productReview (products_id, name, review, grade) values (1 'Maaike', 'regen :(', 3);
-
-insert into productReview (products_id, name, review, grade) values (1 'Matthijs', '', 10);
