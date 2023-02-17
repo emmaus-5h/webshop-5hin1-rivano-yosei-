@@ -1,7 +1,7 @@
 /* all pages */
 
 main {
-  background-color: rgb(83, 213, 253);
+  background-color: rgb(58, 136, 254);
 }
 
 footer {
@@ -29,11 +29,13 @@ footer {
 .card {
   width:200px; 
   height: 700px; 
-  margin-bottom: 20px
+  margin-bottom: 20px;
+  color: rgb(254, 199, 0);
 }
 
 .card-header {
   height: 5em;
+  color: rgb(254, 199, 0);
 }
 
 .card-text {
@@ -62,7 +64,7 @@ footer {
   width: 50px;
 }
 .product_amount {
-  width: 80px
+  width: 80px;
 }
 
 /* basket page */
@@ -70,7 +72,8 @@ footer {
   margin-top:20px;
   list-style: none; 
   padding-left: 5px; 
-  font-size: 15px"
+  font-size: 15px;
+  
 }
 
 .product_row  .product-properties  li {
