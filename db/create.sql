@@ -97,4 +97,6 @@ insert into products_bundle (name, oppervlakte, inwoners, continent, code, price
 
 insert into products_bundle (name, oppervlakte, inwoners, continent, code, price) values ('Wereldmacht bundle', 'Putin Trump Kim winnie de poe', '492662523-7', 0);
 
+SELECT * FROM products_bundle, products
+  WHERE products_bundle.products.id = products.id;
 /* review */
