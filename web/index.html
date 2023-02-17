@@ -47,7 +47,7 @@
 			<h5>Artikelen</h5>
  			<p>Hier zie je een lijst met artikelen die je bij mij kunt bestellen.</p>
 			<p>klik op een artikel voor meer informatie<p>
-					<p>klik op de "winkelwagentje" om het artikel in je winkelwagen te stoppen</p>
+					<p>klik op het "winkelwagentje" om het artikel in je winkelwagen te stoppen</p>
 		</div>	
     <!-- template for product info-->
   	<template id="productcard">
@@ -56,7 +56,9 @@
 				<h5 class="card-header product_title"></h5>
 				<img width="200" class="product_image card-img-top">
 				<div class="card-body">
-					<p class="product_description card-text"></p>
+					<p class="product_oppervlakte card-text"></p>
+          <p class="product_inwoners card-text"></p>
+          <p class="product_continent card-text"></p>
 					<ul class="product-properties">
 						<li><span class="propert-name">Prijs:</span><span class="product_price"></span></li>
 						<li><span class="propert-name">Code:</span><span class="product_code"></span></li>
@@ -121,7 +123,9 @@
               // zodat deze zichtbaar wordt op de webpagina
               const clone = template.content.cloneNode(true);
               clone.querySelector(".product_title").textContent = name
-              clone.querySelector(".product_description").textContent =`${product.description.substr(0, 100)}...`
+              clone.querySelector(".product_oppervlakte").textContent =`${product.oppervlakte.substr(0, 100)}`
+              clone.querySelector(".product_inwoners").textContent =`${product.inwoners.substr(0, 100)}`
+              clone.querySelector(".product_continent").textContent =`${product.continent.substr(0, 100)}`
               clone.querySelector(".product_price").textContent = `€ ${product.price.toFixed(2)}`
               clone.querySelector(".product_code").textContent = product.code
               clone.querySelector(".product_id").value = product.id

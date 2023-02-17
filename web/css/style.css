@@ -37,7 +37,7 @@ footer {
 }
 
 .card-text {
-  min-height:10em
+  min-height:3em
 }
 
 /* index page */
@@ -54,7 +54,7 @@ footer {
 }
 
 .product > .card-header {
-  height:3em
+  height:1em
 }
 
 .product-properties > li > .property-name {

@@ -68,6 +68,7 @@ function getProducts(request, response) {
   console.log('API ontvangt /api/products/', request.query)
   let data = []
   const sqlOpdracht = db.prepare('SELECT products.id AS id, products.name AS name, products.oppervlakte AS oppervlakte, products.inwoners AS inwoners, products.continent AS continent, products.code AS code, products.price AS price FROM products ORDER BY name')
+  
   data = sqlOpdracht.all()
   // console.log(JSON.stringify(data, null, 2))
   response.status(200).send(data)
