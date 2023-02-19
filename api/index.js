@@ -1,4 +1,4 @@
-// database setup, we use better-sqlite3 because it is basic
+ // database setup, we use better-sqlite3 because it is basic
 // for advanced documentation see 
 // https://www.npmjs.com/package/better-sqlite3
 const Database = require('better-sqlite3');
