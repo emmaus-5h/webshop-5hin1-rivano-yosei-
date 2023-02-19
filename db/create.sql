@@ -74,17 +74,17 @@ insert into products (name, oppervlakte, inwoners, continent, code, price) value
 insert into products (name, oppervlakte, inwoners, continent, code, price) values ('Madagaskar', '587.041 km²', '28,92 miljoen inwoners', 'Afrika', '492662523-7', 412);
 
 /* landen bundle */
-insert into products_bundle (name, oppervlakte, inwoners, continent, code, price) values ('Europa bundle','111','111', 'goeie', '492662523-7', 0);
+insert into products_bundle (name, oppervlakte, inwoners, continent, code, price) values ('Europa bundle','846.863 km²','111.15 miljoen', 'Europa', '492662523-7', 100.000);
 
-insert into products_bundle (name, oppervlakte, inwoners, continent, code, price) values ('Amerika bundle','222','222', 'trump', '492662523-7', 0);
+insert into products_bundle (name, oppervlakte, inwoners, continent, code, price) values ('Afrika bundle','3.617.124 km²','194.72', 'goeie', '492662523-7', 0);
 
 insert into products_bundle (name, oppervlakte, inwoners, continent, code, price) values ('Afrika bundle','333','333', 'goeie', '492662523-7', 0);
 
-insert into products_bundle (name, oppervlakte, inwoners, continent, code, price) values ('Arabië bundle','444','444', 'goeie', '492662523-7', 0);
+insert into products_bundle (name, oppervlakte, inwoners, continent, code, price) values ('Oceanië bundle','8.398.862','444', 'goeie', '492662523-7', 0);
 
 insert into products_bundle (name, oppervlakte, inwoners, continent, code, price) values ('Azië bundle', 'goeie','555','555', '492662523-7', 0);
 
-insert into products_bundle (name, oppervlakte, inwoners, continent, code, price) values ('Wereldmacht bundle','666', '666', 'Putin Trump Kim winnie de poe', '492662523-7', 0);
+insert into products_bundle (name, oppervlakte, inwoners, continent, code, price) values ('Azië bundle', 'goeie','555','555', '492662523-7', 0);
 
 
 
