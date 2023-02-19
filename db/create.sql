@@ -111,11 +111,21 @@ insert into persons (name) values ('Rivano');
 insert into persons (name) values ('Joshua');
 insert into persons (name) values ('Maaike');
 
+CREATE TABLE review (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  score VARCHAR(255)
+);
+
+insert into review (score) values ('1');
+insert into review (score) values ('2');
+insert into review (score) values ('3');
+insert into review (score) values ('4');
+insert into review (score) values ('5');
 
 
 
-insert into productReview (persons_id, products_id, grade) values (1, 1, '10/10');
-insert into productReview (persons_id, products_id, grade) values (2, 4, '12/10');
-insert into productReview (persons_id, products_id, grade) values (3, 7, '5/10');
-insert into productReview (persons_id, products_id, grade) values (4, 2, '7/10');
-insert into productReview (persons_id, products_id, grade) values (5, 3, '2/10');
+insert into productReview (persons_id, products_id, grade) values (1, 1, 2);
+insert into productReview (persons_id, products_id, grade) values (2, 4, 3);
+insert into productReview (persons_id, products_id, grade) values (3, 7, 1);
+insert into productReview (persons_id, products_id, grade) values (4, 2, 5);
+insert into productReview (persons_id, products_id, grade) values (5, 3, 4);
